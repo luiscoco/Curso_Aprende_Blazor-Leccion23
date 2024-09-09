@@ -21,13 +21,11 @@
 
 4. ```<RouteView RouteData="routeData" DefaultLayout="typeof(Layout.MainLayout)" />```
 
-   ```<RouteView>```: Este componente es responsable de renderizar la página o componente correspondiente a la ruta encontrada. Utiliza RouteData para identificar qué componente se debe mostrar.
+   ```<RouteView>```: componente que renderiza la página o componente correspondiente a la ruta encontrada. Utiliza ```RouteData``` para identificar qué componente se debe mostrar.
 
-    ```RouteData="routeData"```: Esto pasa la información de la ruta desde el Context del bloque <Found> al <RouteView>, de manera que se pueda renderizar el componente correcto.
+    ```RouteData="routeData"```: pasa la información de la ruta desde el ```Context``` del bloque ```<Found>``` al ```<RouteView>```, para renderizar el componente correcto.
 
-    ```DefaultLayout="typeof(Layout.MainLayout)```: Esto especifica el diseño por defecto que se utilizará al renderizar el componente enrutado.
-
-       En este caso, MainLayout del espacio de nombres Layout se utilizará como diseño predeterminado para cualquier ruta que no especifique explícitamente un diseño diferente.
+    ```DefaultLayout="typeof(Layout.MainLayout)```: diseño por defecto que se utilizará al renderizar el componente enrutado.
 
 5. ```<FocusOnNavigate RouteData="routeData" Selector="h1" />```
 
