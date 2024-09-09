@@ -15,13 +15,9 @@
 
 3. ```<Found Context="routeData">```
 
-   ```<Found>```: Este bloque se ejecuta cuando se encuentra una ruta que coincide con la URL actual. 
+   ```<Found>```: se ejecuta cuando se encuentra una ruta que coincide con la URL actual. 
 
-      Cuando se encuentra la ruta, Blazor pasa la información de la ruta (contenida en routeData) a los componentes hijos.
-
-   ```Context="routeData"```: El atributo Context asigna una variable local (routeData) para almacenar los datos relacionados con la ruta encontrada. 
-
-      Estos datos luego se utilizan en los componentes hijos, como <RouteView>.
+   ```Context="routeData"```: la variable (routeData) almacena los datos relacionados con la ruta encontrada. 
 
 4. ```<RouteView RouteData="routeData" DefaultLayout="typeof(Layout.MainLayout)" />```
 
