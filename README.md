@@ -9,21 +9,21 @@
 
 2. ```<Router AppAssembly="typeof(Program).Assembly">```
 
-2.1. ```<Router>```: Este es el componente principal de Blazor que habilita el enrutamiento dentro de la aplicación. Determina cómo la aplicación responde a los cambios en la URL y qué componentes debe renderizar.
+   ```<Router>```: Este es el componente principal de Blazor que habilita el enrutamiento dentro de la aplicación. Determina cómo la aplicación responde a los cambios en la URL y qué componentes debe renderizar.
 
-2.2. ```AppAssembly="typeof(Program).Assembly```: La propiedad AppAssembly indica al enrutador qué ensamblado contiene los componentes que deben usarse para el enrutamiento. 
+   ```AppAssembly="typeof(Program).Assembly```: La propiedad AppAssembly indica al enrutador qué ensamblado contiene los componentes que deben usarse para el enrutamiento. 
 
-En este caso, se especifica el ensamblado donde se define la clase Program (el punto de entrada de la aplicación Blazor), que normalmente es el ensamblado principal del proyecto.
+      En este caso, se especifica el ensamblado donde se define la clase Program (el punto de entrada de la aplicación Blazor), que normalmente es el ensamblado principal del proyecto.
 
 3. ```<Found Context="routeData">```
 
-```<Found>```: Este bloque se ejecuta cuando se encuentra una ruta que coincide con la URL actual. 
+   ```<Found>```: Este bloque se ejecuta cuando se encuentra una ruta que coincide con la URL actual. 
 
-Cuando se encuentra la ruta, Blazor pasa la información de la ruta (contenida en routeData) a los componentes hijos.
+      Cuando se encuentra la ruta, Blazor pasa la información de la ruta (contenida en routeData) a los componentes hijos.
 
-```Context="routeData"```: El atributo Context asigna una variable local (routeData) para almacenar los datos relacionados con la ruta encontrada. 
+   ```Context="routeData"```: El atributo Context asigna una variable local (routeData) para almacenar los datos relacionados con la ruta encontrada. 
 
-Estos datos luego se utilizan en los componentes hijos, como <RouteView>.
+      Estos datos luego se utilizan en los componentes hijos, como <RouteView>.
 
 4. ```<RouteView RouteData="routeData" DefaultLayout="typeof(Layout.MainLayout)" />```
 
