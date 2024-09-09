@@ -5,7 +5,6 @@
 **NOTA**: El video youtube de esta Lección23 está disponible en el siguiente vínculo: 
 
 
-
 1. Abrir la aplicación Blazor con Visual Studio 2022
 
 2. **<Router AppAssembly="typeof(Program).Assembly">**
