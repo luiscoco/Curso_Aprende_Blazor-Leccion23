@@ -9,9 +9,9 @@
 
 2. ```<Router AppAssembly="typeof(Program).Assembly">```
 
-```<Router>```: Este es el componente principal de Blazor que habilita el enrutamiento dentro de la aplicación. Determina cómo la aplicación responde a los cambios en la URL y qué componentes debe renderizar.
+2.1. ```<Router>```: Este es el componente principal de Blazor que habilita el enrutamiento dentro de la aplicación. Determina cómo la aplicación responde a los cambios en la URL y qué componentes debe renderizar.
 
-```AppAssembly="typeof(Program).Assembly```: La propiedad AppAssembly indica al enrutador qué ensamblado contiene los componentes que deben usarse para el enrutamiento. 
+2.2. ```AppAssembly="typeof(Program).Assembly```: La propiedad AppAssembly indica al enrutador qué ensamblado contiene los componentes que deben usarse para el enrutamiento. 
 
 En este caso, se especifica el ensamblado donde se define la clase Program (el punto de entrada de la aplicación Blazor), que normalmente es el ensamblado principal del proyecto.
 
