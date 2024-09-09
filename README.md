@@ -29,21 +29,17 @@
 
 5. ```<FocusOnNavigate RouteData="routeData" Selector="h1" />```
 
-   ```<FocusOnNavigate>```: Este componente se utiliza para mejorar la accesibilidad gestionando el enfoque al navegar. 
+   ```<FocusOnNavigate>```: componente gestiona el enfoque al navegar. Cuando cambia la ruta enfoca el elemento en la página renderizada.
 
-       Cuando cambia la ruta, se enfocará un elemento específico en la página recién renderizada.
+    ```RouteData="routeData```: vincula el componente a ```routeData```, el comportamiento de enfoque esta ligado a la ruta encontrada.
 
-    ```RouteData="routeData```: Esto vincula el componente a routeData, de modo que el comportamiento de enfoque esté ligado a la ruta encontrada.
-
-    ```Selector="h1"```: Este es un selector CSS utilizado para identificar qué elemento debe ser enfocado cuando ocurre la navegación. 
+    ```Selector="h1"```: selector CSS para identificar qué elemento debe ser enfocado cuando ocurre la navegación. 
 
        En este caso, selecciona el primer elemento ```<h1>``` de la nueva página y mueve el enfoque allí. 
 
-       Esto es útil para la accesibilidad, asegurando que los lectores de pantalla y los usuarios de teclado sepan que el contenido ha cambiado después de la navegación.
-
 ## Resumen:
 
-El componente <Router> habilita la navegación entre diferentes componentes en la aplicación Blazor.
+El componente ```<Router>``` habilita la navegación entre diferentes componentes en la aplicación Blazor.
 
 Cuando se encuentra una ruta que coincide, el componente ```<RouteView>``` renderiza la página correspondiente dentro del MainLayout.
 
